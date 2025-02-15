@@ -1,0 +1,38 @@
+version: "3.1"
+nlu:
+- intent: saudacao
+  examples: |
+    - oi
+    - oie
+    - olá
+    - boa tarde
+    - boa tarde
+    - boa noite
+    - oi, tudo bem?
+    - opa, tudo bem?
+    - olá, como vai
+- intent: agendamento_consulta
+  examples: |
+    - eu gostaria de agendar uma consulta
+    - preciso agendar uma consulta.
+- intent: agendamento_especialidade
+  examples: |
+    - Gostaria de uma consulta com um urologista
+    - Preciso agendar uma consulta com um endocrino
+- intent: agendamento_data_hora
+  examples: |
+    - quarta-feira, manhã
+    - segunda-feira, período da tarde
+    - sexta, tarde
+- intent: agradecimento
+  examples: |
+    - Obrigado
+    - Valeu
+    - obg
+- intent: finalização
+  examples: |
+    - Não, é só isso.
+    - Não
+    - Só isso mesmo.
+    - Somente isso.
+

@@ -1,0 +1,31 @@
+version: '3.1'
+intents:
+  - saudacao
+  - agendamento_consulta
+  - agendamento_especialidade
+  - agendamento_data_hora
+  - agradecimento
+  - finalização
+
+responses:
+  utter_saudacao:
+  - text: 'Olá! Bem-vindo á CLinica do DR.Bozer'
+
+  utter_agendamento_consulta:
+  - text: 'Claro!, Para isso iremos encaminhar os seus dados a nossa central de atendimento. Favor me informe a especialidade desejada.'
+
+  utter_agendamento_especialidade:
+  - text: 'Entendido. Qual a data e o período (manha/tarde) que você prefere?'
+
+  utter_agendamento_data_hora:
+  - text: 'Certo, iremos encaminhar esses dados para a nossa central. Logo mais eles entrarão em contato! Posso ajudar com mais alguma coisa?'
+
+  utter_finalização:
+  - text: 'Tenha um ótimo dia!'
+
+  utter_agradecimento:
+  - text: 'De nada, ficamos felizes em atendê-los'
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
